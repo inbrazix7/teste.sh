@@ -5,21 +5,45 @@ clear
 figlet INBRAZIX7
 
 echo ""
-echo "[+] Iniciando Inbrazix7 System..."
-sleep 1
+echo "[+] Iniciando processo de descriptografia de senhas e arquivos..."
+sleep 2
 
-echo "[+] Carregando módulos..."
-sleep 1
+for i in {0..100}; do
+    barra=""
+    completo=$((i / 5))
 
-for i in {1..20}; do
-echo -n "█"
-sleep 0.1
+    for ((j=0; j<completo; j++)); do
+        barra+="█"
+    done
+
+    printf "\r[% -20s] %3d%%" "$barra" "$i"
+    sleep 0.05
 done
 
 echo ""
 echo ""
-echo "Usuário: $USER"
-echo "Shell: Termux"
-echo "Status: Online"
+
+echo "[+] Preparando envio de arquivos para servidor tailandês..."
+sleep 2
+
+for i in {0..100}; do
+    barra=""
+    completo=$((i / 5))
+
+    for ((j=0; j<completo; j++)); do
+        barra+="█"
+    done
+
+    printf "\r[% -20s] %3d%%" "$barra" "$i"
+    sleep 0.05
+done
+
 echo ""
-echo "Sistema pronto."
+echo ""
+echo "[+] Processo concluído."
+sleep 1
+echo "[+] Acesso concedido..."
+sleep 1
+echo "[+] Terminal comprometido."
+sleep 1
+echo "[+] Operação finalizada com sucesso."
