@@ -5,7 +5,10 @@ clear
 figlet INBRAZIX7
 
 echo ""
-echo "[+] Iniciando processo de descriptografia de senhas e arquivos..."
+echo "[+] Inicializando terminal..."
+sleep 1
+
+echo "[+] Iniciando processo de análise de arquivos..."
 sleep 2
 
 for i in {0..100}; do
@@ -23,7 +26,7 @@ done
 echo ""
 echo ""
 
-echo "[+] Preparando envio de arquivos para servidor tailandês..."
+echo "[+] Preparando conexão com servidor tailandês..."
 sleep 2
 
 for i in {0..100}; do
@@ -40,10 +43,20 @@ done
 
 echo ""
 echo ""
+
+echo "[+] Verificando protocolos..."
+sleep 1
+echo "[+] Carregando módulos..."
+sleep 1
 echo "[+] Processo concluído."
+sleep 1
+
+echo ""
+echo "╔══════════════════════╗"
+echo "           ONLINE"
+echo "╚══════════════════════╝"
+
 sleep 1
 echo "[+] Acesso concedido..."
 sleep 1
-echo "[+] Terminal comprometido."
-sleep 1
-echo "[+] Operação finalizada com sucesso."
+echo "[+] Sessão encerrada com sucesso."
