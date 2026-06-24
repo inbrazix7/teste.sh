@@ -5,6 +5,18 @@ clear
 GREEN="\e[32m"
 RESET="\e[0m"
 
+# 🔥 INICIALIZAÇÃO LINUX (ANTES DO MENU)
+echo -e "${GREEN}[ OK ] Mounting system partitions...${RESET}"
+sleep 1
+echo -e "${GREEN}[ OK ] Loading kernel modules...${RESET}"
+sleep 1
+echo -e "${GREEN}[ OK ] Starting system services...${RESET}"
+sleep 1
+echo -e "${GREEN}[ OK ] Initializing terminal...${RESET}"
+sleep 1
+echo ""
+
+# FIGLET
 if command -v figlet >/dev/null 2>&1; then
     echo -e "${GREEN}"
     figlet INBRAZIX7
@@ -39,7 +51,7 @@ else
 fi
 
 echo ""
-echo -e "${GREEN}[+] Iniciando processo de descriptografia de senhas e arquivos...${RESET}"
+echo -e "${GREEN}[+] Iniciando processo de verificação...${RESET}"
 sleep 2
 
 for i in $(seq 0 100); do
@@ -62,7 +74,7 @@ done
 
 echo ""
 echo ""
-echo -e "${GREEN}[+] enviado arquivos para servidor tailandês...${RESET}"
+echo -e "${GREEN}[+] Sincronizando dados...${RESET}"
 sleep 1
 
 for i in $(seq 0 100); do
@@ -87,11 +99,9 @@ echo ""
 echo ""
 echo -e "${GREEN}[+] Processo concluído.${RESET}"
 sleep 1
-echo -e "${GREEN}[+] Acesso concedido...${RESET}"
+echo -e "${GREEN}[+] Sistema estável.${RESET}"
 sleep 1
-echo -e "${GREEN}[+] Terminal comprometido.${RESET}"
-sleep 1
-echo -e "${GREEN}[+] Operação finalizada.${RESET}"
+echo -e "${GREEN}[+] Terminal ativo.${RESET}"
 ;;
 
 2)
