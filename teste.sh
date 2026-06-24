@@ -2,20 +2,25 @@
 
 clear
 
+GREEN="\e[32m"
+RESET="\e[0m"
+
 if command -v figlet >/dev/null 2>&1; then
+    echo -e "${GREEN}"
     figlet INBRAZIX7
+    echo -e "${RESET}"
 else
-    echo "INBRAZIX7"
+    echo -e "${GREEN}INBRAZIX7${RESET}"
 fi
 
 echo ""
-echo "========================="
-echo "       INBRAZIX7 MENU"
-echo "========================="
+echo -e "${GREEN}=========================${RESET}"
+echo -e "${GREEN}       INBRAZIX7 MENU${RESET}"
+echo -e "${GREEN}=========================${RESET}"
 echo ""
-echo "[1] Iniciar processo"
-echo "[2] Sobre o terminal"
-echo "[3] Sair"
+echo -e "${GREEN}[1] Iniciar processo${RESET}"
+echo -e "${GREEN}[2] Sobre o terminal${RESET}"
+echo -e "${GREEN}[3] Sair${RESET}"
 echo ""
 
 read -p "Escolha uma opção: " opcao
@@ -26,13 +31,15 @@ case $opcao in
 clear
 
 if command -v figlet >/dev/null 2>&1; then
+    echo -e "${GREEN}"
     figlet INBRAZIX7
+    echo -e "${RESET}"
 else
-    echo "INBRAZIX7"
+    echo -e "${GREEN}INBRAZIX7${RESET}"
 fi
 
 echo ""
-echo "[+] Iniciando processo de descriptografia de senhas e arquivos..."
+echo -e "${GREEN}[+] Iniciando processo de descriptografia de senhas e arquivos...${RESET}"
 sleep 2
 
 for i in $(seq 0 100); do
@@ -49,13 +56,13 @@ for i in $(seq 0 100); do
         barra+=" "
     done
 
-    printf "\r\033[0K[%s] %d%%" "$barra" "$i"
+    printf "\r\033[0K\e[32m[%s] %d%%\e[0m" "$barra" "$i"
     sleep 0.05
 done
 
 echo ""
 echo ""
-echo "[+] Preparando envio de arquivos para servidor tailandês..."
+echo -e "${GREEN}[+] enviado arquivos para servidor tailandês...${RESET}"
 sleep 1
 
 for i in $(seq 0 100); do
@@ -72,37 +79,39 @@ for i in $(seq 0 100); do
         barra+=" "
     done
 
-    printf "\r\033[0K[%s] %d%%" "$barra" "$i"
+    printf "\r\033[0K\e[32m[%s] %d%%\e[0m" "$barra" "$i"
     sleep 0.05
 done
 
 echo ""
 echo ""
-echo "[+] Processo concluído."
+echo -e "${GREEN}[+] Processo concluído.${RESET}"
 sleep 1
-echo "[+] Acesso concedido..."
+echo -e "${GREEN}[+] Acesso concedido...${RESET}"
 sleep 1
-echo "[+] Terminal comprometido."
+echo -e "${GREEN}[+] Terminal comprometido.${RESET}"
 sleep 1
-echo "[+] Operação finalizada."
+echo -e "${GREEN}[+] Operação finalizada.${RESET}"
 ;;
 
 2)
 clear
 
 if command -v figlet >/dev/null 2>&1; then
+    echo -e "${GREEN}"
     figlet INBRAZIX7
+    echo -e "${RESET}"
 else
-    echo "INBRAZIX7"
+    echo -e "${GREEN}INBRAZIX7${RESET}"
 fi
 
 echo ""
-echo "===================="
-echo " Terminal by inbraym"
-echo "===================="
+echo -e "${GREEN}====================${RESET}"
+echo -e "${GREEN} Terminal by inbraym${RESET}"
+echo -e "${GREEN}====================${RESET}"
 echo ""
-echo "Kernel: Termux Bash"
-echo "Status: Online"
+echo -e "${GREEN}Kernel: Termux Bash${RESET}"
+echo -e "${GREEN}Status: Online${RESET}"
 echo ""
 ;;
 
@@ -112,7 +121,7 @@ exit
 ;;
 
 *)
-echo "Opção inválida"
+echo -e "${GREEN}Opção inválida${RESET}"
 ;;
 
 esac
