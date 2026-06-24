@@ -2,7 +2,7 @@
 
 clear
 
-figlet INBRAZIX7
+figlet MCLOVIN
 
 echo ""
 echo "[+] Inicializando terminal..."
