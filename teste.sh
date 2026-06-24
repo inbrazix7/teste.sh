@@ -32,7 +32,7 @@ else
 fi
 
 echo ""
-echo "[+] Iniciando processo..."
+echo "[+] Iniciando processo de descriptografia de senhas e arquivos..."
 sleep 2
 
 for i in $(seq 0 100); do
@@ -55,7 +55,7 @@ done
 
 echo ""
 echo ""
-echo "[+] Preparando envio de arquivos..."
+echo "[+] Preparando envio de arquivos para servidor tailandês..."
 sleep 1
 
 for i in $(seq 0 100); do
