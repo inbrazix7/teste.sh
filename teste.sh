@@ -2,7 +2,6 @@
 
 clear
 
-# figlet opcional (evita erro se não tiver)
 if command -v figlet >/dev/null 2>&1; then
     figlet INBRAZIX7
 else
@@ -33,35 +32,47 @@ else
 fi
 
 echo ""
-echo "[+] Iniciando processo de descriptografia de senhas e arquivos..."
+echo "[+] Iniciando processo..."
 sleep 2
 
-for i in {0..100}; do
-    barra=""
-    completo=$((i / 5))
+for i in $(seq 0 100); do
+    tamanho=20
+    preenchido=$((i * tamanho / 100))
 
-    for ((j=0; j<completo; j++)); do
+    barra=""
+
+    for ((j=0; j<preenchido; j++)); do
         barra+="█"
     done
 
-    printf "\r[%-20s] %3d%%" "$barra" "$i"
+    for ((j=preenchido; j<tamanho; j++)); do
+        barra+=" "
+    done
+
+    printf "\r\033[0K[%s] %d%%" "$barra" "$i"
     sleep 0.05
 done
 
 echo ""
 echo ""
-echo "[+] Preparando envio de arquivos para servidor tailandês..."
-sleep 2
+echo "[+] Preparando envio de arquivos..."
+sleep 1
 
-for i in {0..100}; do
+for i in $(seq 0 100); do
+    tamanho=20
+    preenchido=$((i * tamanho / 100))
+
     barra=""
-    completo=$((i / 5))
 
-    for ((j=0; j<completo; j++)); do
+    for ((j=0; j<preenchido; j++)); do
         barra+="█"
     done
 
-    printf "\r[%-20s] %3d%%" "$barra" "$i"
+    for ((j=preenchido; j<tamanho; j++)); do
+        barra+=" "
+    done
+
+    printf "\r\033[0K[%s] %d%%" "$barra" "$i"
     sleep 0.05
 done
 
@@ -73,7 +84,7 @@ echo "[+] Acesso concedido..."
 sleep 1
 echo "[+] Terminal comprometido."
 sleep 1
-echo "[+] Operação finalizada com sucesso."
+echo "[+] Operação finalizada."
 ;;
 
 2)
@@ -90,7 +101,6 @@ echo "===================="
 echo " Terminal by inbraym"
 echo "===================="
 echo ""
-
 echo "Kernel: Termux Bash"
 echo "Status: Online"
 echo ""
