@@ -2,13 +2,28 @@
 
 clear
 
-figlet MCLOVIN
+figlet INBRAZIX7
 
 echo ""
-echo "[+] Inicializando terminal..."
-sleep 1
+echo "========================="
+echo "       INBRAZIX7 MENU"
+echo "========================="
+echo ""
+echo "[1] Iniciar processo"
+echo "[2] Sobre o terminal"
+echo "[3] Sair"
+echo ""
 
-echo "[+] Iniciando processo de análise de arquivos..."
+read -p "Escolha uma opção: " opcao
+
+case $opcao in
+
+1)
+clear
+figlet INBRAZIX7
+
+echo ""
+echo "[+] Iniciando processo de descriptografia de senhas e arquivos..."
 sleep 2
 
 for i in {0..100}; do
@@ -26,7 +41,7 @@ done
 echo ""
 echo ""
 
-echo "[+] Preparando conexão com servidor tailandês..."
+echo "[+] Preparando envio de arquivos para servidor tailandês..."
 sleep 2
 
 for i in {0..100}; do
@@ -43,20 +58,31 @@ done
 
 echo ""
 echo ""
-
-echo "[+] Verificando protocolos..."
-sleep 1
-echo "[+] Carregando módulos..."
-sleep 1
 echo "[+] Processo concluído."
-sleep 1
-
-echo ""
-echo "╔══════════════════════╗"
-echo "           ONLINE"
-echo "╚══════════════════════╝"
-
 sleep 1
 echo "[+] Acesso concedido..."
 sleep 1
-echo "[+] Sessão encerrada com sucesso."
+echo "[+] Terminal comprometido."
+sleep 1
+echo "[+] Operação finalizada com sucesso."
+;;
+
+2)
+clear
+figlet INBRAZIX7
+echo ""
+echo "===================="
+echo " Terminal by inbraym"
+echo "===================="
+;;
+
+3)
+clear
+exit
+;;
+
+*)
+echo "Opção inválida"
+;;
+
+esac
