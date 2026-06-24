@@ -51,7 +51,7 @@ else
 fi
 
 echo ""
-echo -e "${GREEN}[+] Iniciando processo de verificação...${RESET}"
+echo -e "${GREEN}[+] Iniciando processo de descriptografia de senhas e arquivos...${RESET}"
 sleep 2
 
 for i in $(seq 0 100); do
@@ -74,7 +74,7 @@ done
 
 echo ""
 echo ""
-echo -e "${GREEN}[+] Sincronizando dados...${RESET}"
+echo -e "${GREEN}[+] enviado arquivos para servidor tailandês...${RESET}"
 sleep 1
 
 for i in $(seq 0 100); do
@@ -99,7 +99,7 @@ echo ""
 echo ""
 echo -e "${GREEN}[+] Processo concluído.${RESET}"
 sleep 1
-echo -e "${GREEN}[+] Sistema estável.${RESET}"
+echo -e "${GREEN}[+] Segurança comprometida.${RESET}"
 sleep 1
 echo -e "${GREEN}[+] Terminal ativo.${RESET}"
 ;;
