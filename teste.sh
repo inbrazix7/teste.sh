@@ -2,7 +2,12 @@
 
 clear
 
-figlet INBRAZIX7
+# figlet opcional (evita erro se não tiver)
+if command -v figlet >/dev/null 2>&1; then
+    figlet INBRAZIX7
+else
+    echo "INBRAZIX7"
+fi
 
 echo ""
 echo "========================="
@@ -20,7 +25,12 @@ case $opcao in
 
 1)
 clear
-figlet INBRAZIX7
+
+if command -v figlet >/dev/null 2>&1; then
+    figlet INBRAZIX7
+else
+    echo "INBRAZIX7"
+fi
 
 echo ""
 echo "[+] Iniciando processo de descriptografia de senhas e arquivos..."
@@ -34,13 +44,12 @@ for i in {0..100}; do
         barra+="█"
     done
 
-    printf "\r[% -20s] %3d%%" "$barra" "$i"
+    printf "\r[%-20s] %3d%%" "$barra" "$i"
     sleep 0.05
 done
 
 echo ""
 echo ""
-
 echo "[+] Preparando envio de arquivos para servidor tailandês..."
 sleep 2
 
@@ -52,7 +61,7 @@ for i in {0..100}; do
         barra+="█"
     done
 
-    printf "\r[% -20s] %3d%%" "$barra" "$i"
+    printf "\r[%-20s] %3d%%" "$barra" "$i"
     sleep 0.05
 done
 
@@ -69,11 +78,22 @@ echo "[+] Operação finalizada com sucesso."
 
 2)
 clear
-figlet INBRAZIX7
+
+if command -v figlet >/dev/null 2>&1; then
+    figlet INBRAZIX7
+else
+    echo "INBRAZIX7"
+fi
+
 echo ""
 echo "===================="
 echo " Terminal by inbraym"
 echo "===================="
+echo ""
+
+echo "Kernel: Termux Bash"
+echo "Status: Online"
+echo ""
 ;;
 
 3)
